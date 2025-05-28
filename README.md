@@ -1,10 +1,15 @@
-# Welcome to React Router!
+# 💸 DemRRSev (Draft)
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A simple full-stack web application built with **React Router v7** and **Prisma** (using SQLite) to register and display expenses. This is an early draft version focused on experimenting with routing and full-stack integration.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+### 🧩 Project Features
 
-## Features
+- Register new expenses
+- View a list of registered expenses
+- Routing handled with React Router v7
+- Persistent data storage using SQLite + Prisma
+
+### 🛣️ React Router 7 Features
 
 - 🚀 Server-side rendering
 - ⚡️ Hot Module Replacement (HMR)
@@ -14,7 +19,7 @@ A modern, production-ready template for building full-stack React applications u
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
 
-## Getting Started
+## ▶️ Getting Started
 
 ### Installation
 
@@ -22,6 +27,18 @@ Install the dependencies:
 
 ```bash
 npm install
+```
+
+### Setup database
+
+For this project's database we use [Turso](https://turso.tech/)
+You need to create a database there and then set up `TURSO_DATABASE_URL` and `TURSO_AUTH_TOKEN` in `.env`
+
+### Setup Prisma
+
+```bash
+npx prisma generate
+npx prisma db push
 ```
 
 ### Development
@@ -33,6 +50,8 @@ npm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
+
+---
 
 ## Building for Production
 
@@ -82,6 +101,15 @@ Make sure to deploy the output of `npm run build`
 
 This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
+## ⚠️ Notes
+
+- This is an early **draft version**, not intended for production.
+- Authentication, filtering, and editing/deleting expenses are not yet implemented.
+
+## 📜 License
+
+MIT
+
 ---
 
-Built with ❤️ using React Router.
+Built using React Router.
